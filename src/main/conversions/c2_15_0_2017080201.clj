@@ -8,7 +8,7 @@
 (defn- add-interactive-flag
   "Adds the interactive field to the tools table"
   []
-  (println "\t*adding the interactive flag to the tools table")
+  (println "\t* adding the interactive flag to the tools table")
   (exec-sql-statement
    "ALTER TABLE ONLY tools ADD COLUMN interactive BOOLEAN NOT NULL DEFAULT FALSE"))
 
