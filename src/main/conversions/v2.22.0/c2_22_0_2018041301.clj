@@ -1,10 +1,9 @@
-(ns facepalm.c2-21-0-2018041301
-  (:use [kameleon.sql-reader :only [exec-sql-statement]])
+(ns facepalm.c2-22-0-2018041301
   (:require [korma.core :as sql]))
 
 (def ^:private version
   "The destination database version"
-  "2.21.0:20180413.01")
+  "2.22.0:20180413.01")
 
 (defn- update-path
   [path-prefix]
