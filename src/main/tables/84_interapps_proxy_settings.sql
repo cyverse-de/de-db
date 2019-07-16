@@ -4,7 +4,7 @@ SET search_path = public, pg_catalog;
 
 CREATE TABLE interactive_apps_proxy_settings (
   -- primary key
-  id uuid UNIQUE NOT NULL DEFAULT uuid_generate_v1(),
+  id uuid UNIQUE NOT NULL DEFAULT gen_random_uuid(),
 
   -- Docker image to pull that contains the proxy.
   image text NOT NULL,
@@ -37,4 +37,4 @@ CREATE TABLE interactive_apps_proxy_settings (
   -- now, since we want the database to override the setting provided in the
   -- configuration file.
   ssl_key_path text
-)
+);

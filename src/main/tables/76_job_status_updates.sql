@@ -4,7 +4,7 @@ SET search_path = public, pg_catalog;
 -- Records job status updates
 --
 CREATE TABLE job_status_updates (
-    id uuid NOT NULL DEFAULT uuid_generate_v4(),
+    id uuid NOT NULL DEFAULT gen_random_uuid(),
 
     -- corresponds to the external_id field in the job_steps table
     external_id character varying(64) NOT NULL,

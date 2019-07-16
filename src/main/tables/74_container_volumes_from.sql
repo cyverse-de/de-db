@@ -7,11 +7,11 @@ SET search_path = public, pg_catalog;
 --
 CREATE TABLE container_volumes_from (
   -- primary key
-  id uuid NOT NULL UNIQUE DEFAULT uuid_generate_v1(),
+  id uuid NOT NULL UNIQUE DEFAULT gen_random_uuid(),
 
   -- foreign key into the data_containers table.
   data_containers_id uuid NOT NULL,
 
   -- foreign key into the container_settings_table.
   container_settings_id uuid NOT NULL
-)
+);

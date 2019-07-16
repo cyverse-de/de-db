@@ -5,7 +5,7 @@ SET search_path = public, pg_catalog;
 ---
 CREATE TABLE data_containers (
   -- Primary key
-  id UUID UNIQUE NOT NULL DEFAULT uuid_generate_v1(),
+  id UUID UNIQUE NOT NULL DEFAULT gen_random_uuid(),
 
   -- The prefix part of the container name. The rest will consist of the
   -- analysis/job ID.
@@ -16,4 +16,4 @@ CREATE TABLE data_containers (
 
   -- Whether the container is mounted read-only
   read_only BOOLEAN NOT NULL DEFAULT TRUE
-)
+);
