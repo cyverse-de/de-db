@@ -10,3 +10,5 @@ CREATE TABLE app_categories (
     workspace_id uuid NOT NULL
 );
 
+CREATE INDEX ON app_categories (workspace_id);
+

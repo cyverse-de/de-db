@@ -17,3 +17,7 @@ CREATE TABLE tools (
     restricted boolean NOT NULL DEFAULT FALSE,
     interactive boolean NOT NULL DEFAULT FALSE
 );
+
+CREATE INDEX ON tools (tool_type_id);
+CREATE INDEX ON tools (integration_data_id);
+CREATE INDEX ON tools (container_images_id);

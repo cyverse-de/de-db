@@ -10,3 +10,6 @@ CREATE TABLE workspace (
     user_id uuid NOT NULL
 );
 
+CREATE INDEX ON workspace (user_id);
+CREATE INDEX on workspace (root_category_id);
+

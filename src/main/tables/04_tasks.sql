@@ -12,3 +12,7 @@ CREATE TABLE tasks (
     label character varying(255),
     tool_id uuid
 );
+
+CREATE INDEX ON tasks (job_type_id);
+CREATE INDEX ON tasks (tool_id);
+

@@ -15,3 +15,4 @@ CREATE TABLE apps (
     edited_date timestamp without time zone
 );
 
+CREATE INDEX ON apps (integration_data_id);

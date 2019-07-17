@@ -10,3 +10,6 @@ CREATE TABLE app_steps (
     step integer NOT NULL
 );
 
+CREATE INDEX ON app_steps (app_id);
+CREATE INDEX ON app_steps (task_id);
+
