@@ -2,17 +2,17 @@
 -- Name: data_formats_pkey; Type: CONSTRAINT; Schema: public; Owner: de;
 -- Tablespace:
 --
-ALTER TABLE ONLY data_formats
-    ADD CONSTRAINT data_formats_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY data_formats
+--     ADD CONSTRAINT data_formats_pkey
+--     PRIMARY KEY (id);
 
 --
 -- Name: workflow_io_maps_pkey; Type: CONSTRAINT; Schema: public; Owner: de;
 -- Tablespace:
 --
-ALTER TABLE ONLY workflow_io_maps
-    ADD CONSTRAINT workflow_io_maps_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY workflow_io_maps
+--     ADD CONSTRAINT workflow_io_maps_pkey
+--     PRIMARY KEY (id);
 CREATE INDEX workflow_io_maps_app_id_idx ON workflow_io_maps(app_id);
 CREATE INDEX workflow_io_maps_source_idx ON workflow_io_maps(source_step);
 CREATE INDEX workflow_io_maps_target_idx ON workflow_io_maps(target_step);
@@ -21,25 +21,25 @@ CREATE INDEX workflow_io_maps_target_idx ON workflow_io_maps(target_step);
 -- Name: file_parameters_pkey; Type: CONSTRAINT; Schema: public; Owner: de;
 -- Tablespace:
 --
-ALTER TABLE ONLY file_parameters
-    ADD CONSTRAINT file_parameters_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY file_parameters
+--     ADD CONSTRAINT file_parameters_pkey
+--     PRIMARY KEY (id);
 
 --
 -- Name: tool_test_data_files_pkey; Type: CONSTRAINT; Schema: public;
 -- Owner: de; Tablespace:
 --
-ALTER TABLE ONLY tool_test_data_files
-    ADD CONSTRAINT tool_test_data_files_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY tool_test_data_files
+--     ADD CONSTRAINT tool_test_data_files_pkey
+--     PRIMARY KEY (id);
 
 --
 -- Name: info_type_pkey; Type: CONSTRAINT; Schema: public; Owner: de;
 -- Tablespace:
 --
-ALTER TABLE ONLY info_type
-    ADD CONSTRAINT info_type_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY info_type
+--     ADD CONSTRAINT info_type_pkey
+--     PRIMARY KEY (id);
 
 --
 -- Name: input_output_mapping_pkey; Type: CONSTRAINT; Schema: public; Owner: de;
@@ -51,137 +51,137 @@ CREATE UNIQUE INDEX input_output_mapping_unique_idx
 -- Name: integration_data_pkey; Type: CONSTRAINT; Schema: public; Owner: de;
 -- Tablespace:
 --
-ALTER TABLE ONLY integration_data
-    ADD CONSTRAINT integration_data_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY integration_data
+--     ADD CONSTRAINT integration_data_pkey
+--     PRIMARY KEY (id);
 
 --
 -- Name: parameter_groups_pkey; Type: CONSTRAINT; Schema: public; Owner: de;
 -- Tablespace:
 --
-ALTER TABLE ONLY parameter_groups
-    ADD CONSTRAINT parameter_groups_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY parameter_groups
+--     ADD CONSTRAINT parameter_groups_pkey
+--     PRIMARY KEY (id);
 
 --
 -- Name: parameters_pkey; Type: CONSTRAINT; Schema: public; Owner: de;
 -- Tablespace:
 --
-ALTER TABLE ONLY parameters
-    ADD CONSTRAINT parameters_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY parameters
+--     ADD CONSTRAINT parameters_pkey
+--     PRIMARY KEY (id);
 
 --
 -- Name: parameter_values_pkey; Type: CONSTRAINT; Schema: public; Owner: de;
 -- Tablespace:
 --
-ALTER TABLE ONLY parameter_values
-    ADD CONSTRAINT parameter_values_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY parameter_values
+--     ADD CONSTRAINT parameter_values_pkey
+--     PRIMARY KEY (id);
 
 --
 -- Name: parameter_types_pkey; Type: CONSTRAINT; Schema: public; Owner: de;
 -- Tablespace:
 --
-ALTER TABLE ONLY parameter_types
-    ADD CONSTRAINT parameter_types_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY parameter_types
+--     ADD CONSTRAINT parameter_types_pkey
+--     PRIMARY KEY (id);
 
 --
 -- Name: ratings_pkey; Type: CONSTRAINT; Schema: public; Owner: de;
 -- Tablespace:
 --
-ALTER TABLE ONLY ratings
-    ADD CONSTRAINT ratings_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY ratings
+--     ADD CONSTRAINT ratings_pkey
+--     PRIMARY KEY (id);
 
 --
 -- Name: validation_rule_arguments_pkey; Type: CONSTRAINT; Schema: public; Owner: de;
 -- Tablespace:
 --
-ALTER TABLE ONLY validation_rule_arguments
-    ADD CONSTRAINT validation_rule_arguments_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY validation_rule_arguments
+--     ADD CONSTRAINT validation_rule_arguments_pkey
+--     PRIMARY KEY (id);
 CREATE INDEX validation_rule_arguments_rule_id_idx ON validation_rule_arguments(rule_id);
 
 --
 -- Name: validation_rules_pkey; Type: CONSTRAINT; Schema: public; Owner: de; Tablespace:
 --
-ALTER TABLE ONLY validation_rules
-    ADD CONSTRAINT validation_rules_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY validation_rules
+--     ADD CONSTRAINT validation_rules_pkey
+--     PRIMARY KEY (id);
 
 --
 -- Name: rule_subtype_pkey; Type: CONSTRAINT; Schema: public; Owner: de;
 -- Tablespace:
 --
-ALTER TABLE ONLY rule_subtype
-    ADD CONSTRAINT rule_subtype_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY rule_subtype
+--     ADD CONSTRAINT rule_subtype_pkey
+--     PRIMARY KEY (id);
 
 --
 -- Name: rule_type_pkey; Type: CONSTRAINT; Schema: public; Owner: de;
 -- Tablespace:
 --
-ALTER TABLE ONLY rule_type
-    ADD CONSTRAINT rule_type_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY rule_type
+--     ADD CONSTRAINT rule_type_pkey
+--     PRIMARY KEY (id);
 
 --
 -- Name: suggested_groups_pkey; Type: CONSTRAINT; Schema: public; Owner: de;
 -- Tablespace:
 --
-ALTER TABLE ONLY suggested_groups
-    ADD CONSTRAINT suggested_groups_pkey
-    PRIMARY KEY (app_id, app_category_id);
+-- ALTER TABLE ONLY suggested_groups
+--     ADD CONSTRAINT suggested_groups_pkey
+--     PRIMARY KEY (app_id, app_category_id);
 
 --
 -- Name: app_category_group_pkey; Type: CONSTRAINT; Schema: public; Owner:
 -- de; Tablespace:
 --
-ALTER TABLE ONLY app_category_group
-    ADD CONSTRAINT app_category_group_pkey
-    PRIMARY KEY (parent_category_id, child_category_id);
+-- ALTER TABLE ONLY app_category_group
+--     ADD CONSTRAINT app_category_group_pkey
+--     PRIMARY KEY (parent_category_id, child_category_id);
 
 --
 -- Name: app_category_app_pkey; Type: CONSTRAINT; Schema: public;
 -- Owner: de; Tablespace:
 --
-ALTER TABLE ONLY app_category_app
-    ADD CONSTRAINT app_category_app_pkey
-    PRIMARY KEY (app_category_id, app_id);
+-- ALTER TABLE ONLY app_category_app
+--     ADD CONSTRAINT app_category_app_pkey
+--     PRIMARY KEY (app_category_id, app_id);
 
 --
 -- Name: apps_pkey; Type: CONSTRAINT; Schema: public;
 -- Owner: de; Tablespace:
 --
-ALTER TABLE ONLY apps
-    ADD CONSTRAINT apps_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY apps
+--     ADD CONSTRAINT apps_pkey
+--     PRIMARY KEY (id);
 
 --
 -- Name: app_references_pkey; Type: CONSTRAINT; Schema:
 -- public; Owner: de; Tablespace:
 --
-ALTER TABLE ONLY app_references
-    ADD CONSTRAINT app_references_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY app_references
+--     ADD CONSTRAINT app_references_pkey
+--     PRIMARY KEY (id);
 
 --
 -- Name: app_steps_pkey; Type: CONSTRAINT; Schema: public;
 -- Owner: de; Tablespace:
 --
-ALTER TABLE ONLY app_steps
-    ADD CONSTRAINT app_steps_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY app_steps
+--     ADD CONSTRAINT app_steps_pkey
+--     PRIMARY KEY (id);
 
 --
 -- Name: value_type_pkey; Type: CONSTRAINT; Schema: public; Owner: de;
 -- Tablespace:
 --
-ALTER TABLE ONLY value_type
-    ADD CONSTRAINT value_type_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY value_type
+--     ADD CONSTRAINT value_type_pkey
+--     PRIMARY KEY (id);
 
 --
 -- Name: votes_unique; Type: CONSTRAINT; Schema: public; Owner: de;
@@ -194,58 +194,58 @@ ALTER TABLE ONLY ratings
 --
 -- Primary Key for the version table.
 --
-ALTER TABLE ONLY version
-    ADD CONSTRAINT version_pkey
-    PRIMARY KEY (version);
+-- ALTER TABLE ONLY version
+--     ADD CONSTRAINT version_pkey
+--     PRIMARY KEY (version);
 
 --
 -- Primary Key for the tool_types table.
 --
-ALTER TABLE ONLY tool_types
-    ADD CONSTRAINT tool_types_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY tool_types
+--     ADD CONSTRAINT tool_types_pkey
+--     PRIMARY KEY (id);
 
 --
 -- Primary Key for the tool_request_status_codes table.
 --
-ALTER TABLE ONLY tool_request_status_codes
-    ADD CONSTRAINT tool_request_status_codes_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY tool_request_status_codes
+--     ADD CONSTRAINT tool_request_status_codes_pkey
+--     PRIMARY KEY (id);
 
 --
 -- Primary Key for the tool_architectures table.
 --
-ALTER TABLE ONLY tool_architectures
-    ADD CONSTRAINT tool_architectures_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY tool_architectures
+--     ADD CONSTRAINT tool_architectures_pkey
+--     PRIMARY KEY (id);
 
 --
 -- Primary Key for the tool_requests table.
 --
-ALTER TABLE ONLY tool_requests
-    ADD CONSTRAINT tool_requests_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY tool_requests
+--     ADD CONSTRAINT tool_requests_pkey
+--     PRIMARY KEY (id);
 
 --
 -- Primary Key for the tool_request_statuses table.
 --
-ALTER TABLE ONLY tool_request_statuses
-    ADD CONSTRAINT tool_request_statuses_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY tool_request_statuses
+--     ADD CONSTRAINT tool_request_statuses_pkey
+--     PRIMARY KEY (id);
 
 --
 -- Primary Key for the job_types table.
 --
-ALTER TABLE ONLY job_types
-    ADD CONSTRAINT job_types_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY job_types
+--     ADD CONSTRAINT job_types_pkey
+--     PRIMARY KEY (id);
 
 --
 -- Primary Key for the tree_urls table.
 --
-ALTER TABLE ONLY tree_urls
-    ADD CONSTRAINT tree_urls_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY tree_urls
+--     ADD CONSTRAINT tree_urls_pkey
+--     PRIMARY KEY (id);
 
 --
 -- Name: input_output_mapping_mapping_id_fk; Type: FK CONSTRAINT; Schema:
@@ -565,9 +565,9 @@ CREATE INDEX validation_rules_parameters_id_idx ON validation_rules(parameter_id
 --
 -- Name: genome_reference_pkey; Type: CONSTRAINT; Schema: public; Owner: de;
 --
-ALTER TABLE ONLY genome_reference
-    ADD CONSTRAINT genome_reference_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY genome_reference
+--     ADD CONSTRAINT genome_reference_pkey
+--     PRIMARY KEY (id);
 
 --
 -- Name: genome_reference_created_by_fkey; Type: CONSTRAINT; Schema:
@@ -597,9 +597,9 @@ ALTER TABLE ONLY integration_data
 --
 -- The primary key for the data_source table.
 --
-ALTER TABLE ONLY data_source
-    ADD CONSTRAINT data_source_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY data_source
+--     ADD CONSTRAINT data_source_pkey
+--     PRIMARY KEY (id);
 
 --
 -- Each data source must have a unique name.
@@ -699,9 +699,9 @@ ALTER TABLE ONLY logins
 --
 -- The primary key for the user_preferences table.
 --
-ALTER TABLE ONLY user_preferences
-    ADD CONSTRAINT user_preferences_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY user_preferences
+--     ADD CONSTRAINT user_preferences_pkey
+--     PRIMARY KEY (id);
 
 --
 -- Foreign key constraint for the user_id field of the user_preferences table.
@@ -715,9 +715,9 @@ CREATE INDEX user_preferences_user_id_idx ON user_preferences(user_id);
 --
 -- The primary key for the user_sessions table.
 --
-ALTER TABLE ONLY user_sessions
-    ADD CONSTRAINT user_sessions_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY user_sessions
+--     ADD CONSTRAINT user_sessions_pkey
+--     PRIMARY KEY (id);
 
 --
 -- Foreign key constraint for the user_id field of the user_sessions table.
@@ -731,9 +731,9 @@ CREATE INDEX user_sessions_user_id_idx ON user_sessions(user_id);
 --
 -- The primary key for the user_saved_searches table.
 --
-ALTER TABLE ONLY user_saved_searches
-    ADD CONSTRAINT user_saved_searches_pkey
-    PRIMARY KEY (id);
+-- ALTER TABLE ONLY user_saved_searches
+--     ADD CONSTRAINT user_saved_searches_pkey
+--     PRIMARY KEY (id);
 
 --
 -- Foreign key constraint for the user_id field of the user_saved_searches table.
@@ -747,9 +747,9 @@ CREATE INDEX user_saved_searches_user_id_idx ON user_sessions(user_id);
 --
 -- The primary key for the access_tokens table.
 --
-ALTER TABLE ONLY access_tokens
-    ADD CONSTRAINT access_tokens_pkey
-    PRIMARY KEY (webapp, user_id);
+-- ALTER TABLE ONLY access_tokens
+--     ADD CONSTRAINT access_tokens_pkey
+--     PRIMARY KEY (webapp, user_id);
 
 --
 -- Foreign key constraint for the user_id column of the access_tokens
@@ -764,8 +764,8 @@ ALTER TABLE ONLY access_tokens
 -- The primary key for the authorization_requests table.
 --
 ALTER TABLE ONLY authorization_requests
-    ADD CONSTRAINT authorization_requests_pkey
-    PRIMARY KEY (id);
+    -- ADD CONSTRAINT authorization_requests_pkey
+    -- PRIMARY KEY (id);
 
 --
 -- Foreign key constraint for the user_id column of the authorization_requests

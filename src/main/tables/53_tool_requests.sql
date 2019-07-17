@@ -4,7 +4,7 @@ SET search_path = public, pg_catalog;
 -- The tool requests themselves.
 --
 CREATE TABLE tool_requests (
-    id UUID NOT NULL DEFAULT gen_random_uuid(),
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     requestor_id UUID NOT NULL,
     phone VARCHAR(30),
     tool_name VARCHAR(255) NOT NULL,

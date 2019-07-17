@@ -4,7 +4,7 @@ SET search_path = public, pg_catalog;
 
 CREATE TABLE quick_launches (
   -- Primary key
-  id uuid NOT NULL,
+  id uuid PRIMARY KEY,
 
   -- The name of the badge. Same length as the name in the apps table.
   name character varying(255) NOT NULL,

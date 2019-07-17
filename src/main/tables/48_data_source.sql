@@ -4,7 +4,7 @@ SET search_path = public, pg_catalog;
 -- Data source
 --
 CREATE TABLE data_source (
-    id uuid NOT NULL DEFAULT gen_random_uuid(),
+    id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
     name varchar(50) NOT NULL,
     label varchar(50) NOT NULL,
     description text NOT NULL,

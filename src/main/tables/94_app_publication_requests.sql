@@ -4,7 +4,7 @@ SET search_path = public, pg_catalog;
 -- A table defining the set of available app publication request status codes.
 --
 CREATE TABLE app_publication_request_status_codes (
-    id UUID NOT NULL DEFAULT gen_random_uuid(),
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     name VARCHAR(64) NOT NULL,
     description TEXT NOT NULL,
     email_template VARCHAR(64)
@@ -20,7 +20,7 @@ CREATE UNIQUE INDEX app_publication_request_status_codes_name_index
 -- The app publication requests themselves.
 --
 CREATE TABLE app_publication_requests (
-    id UUID NOT NULL DEFAULT gen_random_uuid(),
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     requestor_id UUID NOT NULL,
     app_id UUID
 );
@@ -37,7 +37,7 @@ CREATE INDEX app_publication_requests_app_id_index
 -- The statuses that have been applied to each app publication request.
 --
 CREATE TABLE app_publication_request_statuses (
-    id UUID NOT NULL DEFAULT gen_random_uuid(),
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     app_publication_request_id UUID NOT NULL,
     app_publication_request_status_code_id UUID NOT NULL,
     date_assigned TIMESTAMP DEFAULT now() NOT NULL,

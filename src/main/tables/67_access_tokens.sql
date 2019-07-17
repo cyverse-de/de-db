@@ -8,5 +8,7 @@ CREATE TABLE access_tokens (
     user_id UUID NOT NULL,
     token BYTEA NOT NULL,
     expires_at TIMESTAMP,
-    refresh_token BYTEA
+    refresh_token BYTEA,
+
+    PRIMARY KEY (webapp, user_id)
 );

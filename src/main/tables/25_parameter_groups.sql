@@ -4,7 +4,7 @@ SET search_path = public, pg_catalog;
 -- parameter_groups table
 --
 CREATE TABLE parameter_groups (
-    id uuid NOT NULL DEFAULT gen_random_uuid(),
+    id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
     task_id uuid NOT NULL,
     name character varying(255),
     description text,

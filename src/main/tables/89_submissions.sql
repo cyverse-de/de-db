@@ -4,6 +4,6 @@ SET search_path = public, pg_catalog;
 
 CREATE TABLE submissions (
   -- Primary Key
-  id uuid NOT NULL,
+  id uuid PRIMARY KEY,
   submission json NOT NULL
 );

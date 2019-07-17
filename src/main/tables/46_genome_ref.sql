@@ -4,7 +4,7 @@ SET search_path = public, pg_catalog;
 -- genome_reference
 --
 CREATE TABLE genome_reference (
-    id uuid NOT NULL DEFAULT gen_random_uuid(),
+    id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
     name varchar(512) NOT NULL,
     path varchar(1024) NOT NULL,
     deleted boolean DEFAULT false NOT NULL,

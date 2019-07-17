@@ -4,7 +4,7 @@ SET search_path = public, pg_catalog;
 -- file_parameters table
 --
 CREATE TABLE file_parameters (
-    id uuid NOT NULL DEFAULT gen_random_uuid(),
+    id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
     parameter_id uuid,
     retain boolean DEFAULT false,
     is_implicit boolean DEFAULT false,

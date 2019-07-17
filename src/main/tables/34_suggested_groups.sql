@@ -6,5 +6,7 @@ SET search_path = public, pg_catalog;
 --
 CREATE TABLE suggested_groups (
     app_id uuid NOT NULL,
-    app_category_id uuid NOT NULL
+    app_category_id uuid NOT NULL,
+
+    PRIMARY KEY (app_id, app_category_id)
 );

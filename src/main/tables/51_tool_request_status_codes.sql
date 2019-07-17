@@ -4,7 +4,7 @@ SET search_path = public, pg_catalog;
 -- A table defining the set of available tool request status codes.
 --
 CREATE TABLE tool_request_status_codes (
-    id UUID NOT NULL DEFAULT gen_random_uuid(),
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     name VARCHAR(64) NOT NULL,
     description TEXT NOT NULL,
     email_template VARCHAR(64)

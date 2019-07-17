@@ -4,7 +4,7 @@ SET search_path = public, pg_catalog;
 -- Controls the defaults on a per-user basis.
 CREATE TABLE quick_launch_user_defaults (
   -- Primary key
-  id uuid NOT NULL,
+  id uuid PRIMARY KEY,
 
   -- Foreign key into the users table. This is the user that set the quick
   -- launch as their default for the app that the QL was created for.

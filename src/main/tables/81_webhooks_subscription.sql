@@ -5,5 +5,7 @@ SET search_path = public, pg_catalog;
 --
 CREATE TABLE webhooks_subscription (
   webhook_id uuid NOT NULL,
-  topic_id uuid NOT NULL
+  topic_id uuid NOT NULL,
+
+  PRIMARY KEY (webhook_id, topic_id)
 );

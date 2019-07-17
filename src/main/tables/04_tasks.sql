@@ -4,7 +4,7 @@ SET search_path = public, pg_catalog;
 -- tasks table
 --
 CREATE TABLE tasks (
-    id uuid NOT NULL DEFAULT gen_random_uuid(),
+    id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
     job_type_id uuid NOT NULL,
     external_app_id character varying(255),
     name character varying(255) NOT NULL,

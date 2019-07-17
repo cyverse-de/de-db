@@ -7,7 +7,7 @@ SET search_path = public, pg_catalog;
 --
 CREATE TABLE container_settings (
   -- Primary key
-  id uuid UNIQUE NOT NULL DEFAULT gen_random_uuid(),
+  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
 
   -- Foreign key into the tools table
   tools_id uuid UNIQUE NOT NULL,

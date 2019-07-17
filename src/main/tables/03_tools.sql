@@ -4,7 +4,7 @@ SET search_path = public, pg_catalog;
 -- tools table
 --
 CREATE TABLE tools (
-    id uuid NOT NULL DEFAULT gen_random_uuid(),
+    id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
     name character varying(255) NOT NULL,
     location character varying(255),
     tool_type_id uuid NOT NULL,

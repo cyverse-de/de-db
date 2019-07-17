@@ -5,5 +5,7 @@ SET search_path = public, pg_catalog;
 --
 CREATE TABLE app_category_app (
     app_category_id uuid NOT NULL,
-    app_id uuid NOT NULL
+    app_id uuid NOT NULL,
+
+    PRIMARY KEY (app_category_id, app_id)
 );

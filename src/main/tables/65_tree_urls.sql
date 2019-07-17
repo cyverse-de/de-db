@@ -4,7 +4,7 @@ SET search_path = public, pg_catalog;
 --- A table of tree urls associated with files.
 ---
 CREATE TABLE tree_urls (
-    id UUID UNIQUE NOT NULL DEFAULT gen_random_uuid(),
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     sha1 VARCHAR(40) UNIQUE NOT NULL,
     tree_urls TEXT NOT NULL
 );

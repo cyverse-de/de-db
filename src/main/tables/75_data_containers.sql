@@ -5,7 +5,7 @@ SET search_path = public, pg_catalog;
 ---
 CREATE TABLE data_containers (
   -- Primary key
-  id UUID UNIQUE NOT NULL DEFAULT gen_random_uuid(),
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
 
   -- The prefix part of the container name. The rest will consist of the
   -- analysis/job ID.

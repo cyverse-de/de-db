@@ -11,5 +11,7 @@ CREATE TABLE job_steps (
     end_date timestamp,
     status character varying(64) NOT NULL,
     job_type_id uuid NOT NULL,
-    app_step_number integer NOT NULL
+    app_step_number integer NOT NULL,
+    
+    PRIMARY KEY (job_id, step_number)
 );

@@ -4,7 +4,7 @@ SET search_path = public, pg_catalog;
 -- A table for information about the systems on which a tool can run.
 --
 CREATE TABLE tool_architectures (
-    id UUID NOT NULL DEFAULT gen_random_uuid(),
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     name VARCHAR(64) NOT NULL,
     description TEXT NOT NULL
 );

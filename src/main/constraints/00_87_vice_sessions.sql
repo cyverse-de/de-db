@@ -1,5 +1,5 @@
-SET search_path = public, pg_catalog;
+-- SET search_path = public, pg_catalog;
 
-ALTER TABLE ONLY "session"
-    ADD CONSTRAINT "session_pkey"
-    PRIMARY KEY ("sid") NOT DEFERRABLE INITIALLY IMMEDIATE;
+-- ALTER TABLE ONLY "session"
+--     ADD CONSTRAINT "session_pkey"
+--     PRIMARY KEY ("sid") NOT DEFERRABLE INITIALLY IMMEDIATE;

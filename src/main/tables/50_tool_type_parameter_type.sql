@@ -6,5 +6,7 @@ SET search_path = public, pg_catalog;
 --
 CREATE TABLE tool_type_parameter_type (
    tool_type_id uuid NOT NULL,
-   parameter_type_id uuid NOT NULL
+   parameter_type_id uuid NOT NULL,
+
+   PRIMARY KEY (tool_type_id, parameter_type_id)
 );

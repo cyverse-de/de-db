@@ -8,5 +8,7 @@ CREATE TABLE input_output_mapping (
     input uuid,
     external_input character varying(255),
     output uuid,
-    external_output character varying(255)
+    external_output character varying(255),
+
+    PRIMARY KEY (mapping_id, input, external_input)
 );

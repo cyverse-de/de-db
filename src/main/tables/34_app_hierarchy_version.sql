@@ -4,6 +4,7 @@ SET search_path = public, pg_catalog;
 -- app_hierarchy_version table
 --
 CREATE TABLE app_hierarchy_version (
+    id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
     version VARCHAR NOT NULL,
     applied_by UUID NOT NULL,
     applied timestamp DEFAULT now()

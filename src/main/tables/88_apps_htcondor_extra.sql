@@ -4,6 +4,6 @@ SET search_path = public, pg_catalog;
 
 CREATE TABLE apps_htcondor_extra (
   -- primary key
-  apps_id uuid NOT NULL,
+  apps_id uuid PRIMARY KEY,
   extra_requirements text NOT NULL
 );

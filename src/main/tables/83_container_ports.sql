@@ -5,7 +5,7 @@ SET search_path = public, pg_catalog;
 
 CREATE TABLE container_ports (
   -- primary key
-  id uuid UNIQUE NOT NULL DEFAULT gen_random_uuid(),
+  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
 
   -- The foreign key into the container_settings table
   container_settings_id uuid NOT NULL,
