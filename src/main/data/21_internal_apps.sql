@@ -249,16 +249,16 @@ INSERT INTO container_volumes_from (data_containers_id, container_settings_id)
    LIMIT 1;
 
 
-UPDATE ONLY tools
+UPDATE tools
    SET container_images_id = '15959300-b972-4571-ace2-081af0909599'
  WHERE id = '681251EF-EE59-4FE9-9436-DC8A23FEB11A';
 
 -- The wc tool reuses the curl-wrapper image.
-UPDATE ONLY tools
+UPDATE tools
    SET container_images_id = '15959300-b972-4571-ace2-081af0909599'
  WHERE id = '85cf7a33-386b-46fe-87c7-8c9d59972624';
 
 -- Everything else should use the docker.cyverse.org/backwards-compat:latest container.
-UPDATE ONLY tools
+UPDATE tools
    SET container_images_id = 'fc210a84-f7cd-4067-939c-a68ec3e3bd2b'
  WHERE container_images_id IS NULL;
