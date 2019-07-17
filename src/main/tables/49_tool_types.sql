@@ -9,5 +9,5 @@ CREATE TABLE tool_types (
     label varchar(128) NOT NULL,
     description text,
     hidden boolean NOT NULL DEFAULT FALSE,
-    notification_type notification_types NOT NULL
+    notification_type_id uuid NOT NULL
 );
