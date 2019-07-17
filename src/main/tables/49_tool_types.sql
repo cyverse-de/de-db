@@ -9,5 +9,13 @@ CREATE TABLE tool_types (
     label varchar(128) NOT NULL,
     description text,
     hidden boolean NOT NULL DEFAULT FALSE,
-    notification_type_id uuid NOT NULL
+    notification_type STRING check (
+        notification_type='apps' or
+        notification_type='tool_request' or
+        notification_type='team' or
+        notification_type='data' or
+        notification_type='analysis' or
+        notification_type='tools' or
+        notification_type='permanent_id_request'
+    ) NOT NULL
 );
