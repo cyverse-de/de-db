@@ -10,3 +10,5 @@ CREATE TABLE tool_test_data_files (
     tool_id uuid NOT NULL
 );
 
+CREATE INDEX ON tool_test_data_files (tool_id);
+

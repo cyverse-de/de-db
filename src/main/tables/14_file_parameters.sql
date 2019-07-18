@@ -13,3 +13,6 @@ CREATE TABLE file_parameters (
     data_format uuid NOT NULL,
     data_source_id uuid NOT NULL
 );
+
+CREATE INDEX ON file_parameters (parameter_id);
+CREATE INDEX ON file_parameters (data_source_id);

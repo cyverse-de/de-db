@@ -9,3 +9,6 @@ CREATE TABLE webhooks (
   url text NOT NULL,
   type_id uuid NOT NULL
 );
+
+CREATE INDEX ON webhooks (user_id);
+CREATE INDEX ON webhooks (type_id);

@@ -9,3 +9,6 @@ CREATE TABLE workflow_io_maps (
     target_step uuid NOT NULL,
     source_step uuid NOT NULL
 );
+
+CREATE INDEX ON workflow_io_maps (target_step);
+CREATE INDEX ON workflow_io_maps (source_step);

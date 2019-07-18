@@ -14,3 +14,4 @@ CREATE TABLE rule_type (
     rule_subtype_id uuid NOT NULL
 );
 
+CREATE INDEX ON rule_type (rule_subtype_id);

@@ -19,3 +19,5 @@ CREATE TABLE container_ports (
 
   bind_to_host boolean NOT NULL DEFAULT FALSE
 );
+
+CREATE INDEX ON container_ports (container_settings_id);

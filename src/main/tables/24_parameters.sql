@@ -17,3 +17,6 @@ CREATE TABLE parameters (
     omit_if_blank boolean DEFAULT true
 );
 
+CREATE INDEX ON parameters (parameter_group_id);
+CREATE INDEX ON parameters (parameter_type);
+

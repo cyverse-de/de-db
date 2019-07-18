@@ -15,3 +15,5 @@ CREATE TABLE app_hierarchy_version (
 --
 CREATE INDEX app_hierarchy_version_applied
     ON app_hierarchy_version(applied);
+
+CREATE INDEX ON app_hierarchy_version (applied_by);

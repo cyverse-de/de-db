@@ -13,3 +13,5 @@ CREATE TABLE parameter_groups (
     is_visible boolean DEFAULT true
 );
 
+CREATE INDEX ON parameter_groups (task_id);
+

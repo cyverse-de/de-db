@@ -14,3 +14,6 @@ CREATE TABLE genome_reference (
     last_modified_on timestamp DEFAULT now() NOT NULL
 );
 
+CREATE INDEX ON genome_reference (created_by);
+CREATE INDEX ON genome_reference (last_modified_by);
+

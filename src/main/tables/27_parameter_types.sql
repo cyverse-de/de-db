@@ -14,3 +14,5 @@ CREATE TABLE parameter_types (
     value_type_id uuid
 );
 
+CREATE INDEX ON parameter_types (value_type_id);
+

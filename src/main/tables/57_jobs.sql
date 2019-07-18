@@ -34,3 +34,6 @@ CREATE INDEX jobs_app_id_index ON jobs(app_id);
 CREATE INDEX jobs_status_index ON jobs(status);
 CREATE INDEX jobs_start_date_index ON jobs(start_date);
 CREATE INDEX jobs_end_date_index ON jobs(end_date);
+
+CREATE INDEX ON jobs (job_type_id);
+CREATE INDEX ON jobs (user_id);

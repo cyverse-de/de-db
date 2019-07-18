@@ -11,3 +11,6 @@ CREATE TABLE app_documentation (
   created_by UUID NOT NULL,
   modified_by UUID NOT NULL
 );
+
+CREATE INDEX ON app_documentation (created_by);
+CREATE INDEX ON app_documentation (modified_by);

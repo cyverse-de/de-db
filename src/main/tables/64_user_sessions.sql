@@ -9,3 +9,5 @@ CREATE TABLE user_sessions (
     session TEXT NOT NULL
 );
 
+CREATE INDEX ON user_sessions (user_id);
+

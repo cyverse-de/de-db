@@ -10,3 +10,5 @@ CREATE TABLE validation_rule_arguments (
     argument_value text
 );
 
+CREATE INDEX ON validation_rule_arguments (rule_id);
+

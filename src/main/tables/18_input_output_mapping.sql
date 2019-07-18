@@ -12,3 +12,5 @@ CREATE TABLE input_output_mapping (
 
     PRIMARY KEY (mapping_id, input, external_input)
 );
+
+CREATE INDEX ON input_output_mapping (output);

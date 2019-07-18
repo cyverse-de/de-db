@@ -20,3 +20,5 @@ CREATE TABLE container_volumes (
 
   unique(container_settings_id, host_path, container_path)
 );
+
+CREATE INDEX ON container_volumes (container_settings_id);

@@ -15,3 +15,6 @@ CREATE TABLE container_volumes_from (
   -- foreign key into the container_settings_table.
   container_settings_id uuid NOT NULL
 );
+
+CREATE INDEX ON container_volumes_from (data_containers_id);
+CREATE INDEX ON container_volumes_from (container_settings_id);

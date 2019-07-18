@@ -24,3 +24,7 @@ CREATE TABLE quick_launches (
   -- Whether or not all users can see the quick launch
   is_public boolean NOT NULL DEFAULT false
 );
+
+CREATE INDEX ON quick_launches (creator);
+CREATE INDEX ON quick_launches (submission_id);
+CREATE INDEX ON quick_launches (app_id);

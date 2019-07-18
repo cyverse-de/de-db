@@ -12,3 +12,5 @@ CREATE TABLE access_tokens (
 
     PRIMARY KEY (webapp, user_id)
 );
+
+CREATE INDEX ON access_tokens (user_id);

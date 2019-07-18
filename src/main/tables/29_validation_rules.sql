@@ -9,3 +9,5 @@ CREATE TABLE validation_rules (
     rule_type uuid NOT NULL
 );
 
+CREATE INDEX ON validation_rules (parameter_id);
+

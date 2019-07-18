@@ -15,3 +15,6 @@ CREATE TABLE parameter_values (
     label text
 );
 
+CREATE INDEX ON parameter_values (parent_id);
+CREATE INDEX ON parameter_values (parameter_id);
+

@@ -11,3 +11,5 @@ CREATE TABLE logins (
     login_time timestamp NOT NULL DEFAULT now(),
     logout_time timestamp
 );
+
+CREATE INDEX ON logins (user_id);

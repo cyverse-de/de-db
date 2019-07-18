@@ -20,3 +20,5 @@ CREATE TABLE container_devices(
 
   unique(container_settings_id, host_path, container_path)
 );
+
+CREATE INDEX ON container_devices (container_settings_id);

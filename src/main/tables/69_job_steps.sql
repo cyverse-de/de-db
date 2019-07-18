@@ -15,3 +15,6 @@ CREATE TABLE job_steps (
     
     PRIMARY KEY (job_id, step_number)
 );
+
+CREATE INDEX ON job_steps (external_id);
+CREATE INDEX ON job_steps (job_type_id);

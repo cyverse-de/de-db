@@ -71,3 +71,6 @@ CREATE TABLE container_settings (
   -- will be used (but not stored in the database).
   uid int
 );
+
+CREATE INDEX ON container_settings (tools_id);
+CREATE INDEX ON container_settings (interactive_apps_proxy_settings_id);

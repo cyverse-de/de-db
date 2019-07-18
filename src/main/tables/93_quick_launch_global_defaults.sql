@@ -12,3 +12,6 @@ CREATE TABLE quick_launch_global_defaults (
   -- Foreign key into the quick_launches table.
   quick_launch_id uuid NOT NULL
 );
+
+CREATE INDEX ON quick_launch_global_defaults (app_id);
+CREATE INDEX ON quick_launch_global_defaults (quick_launch_id);

@@ -11,3 +11,7 @@ CREATE TABLE ratings (
     comment_id bigint
 );
 
+CREATE INDEX ON ratings (user_id);
+CREATE INDEX ON ratings (app_id);
+CREATE INDEX ON ratings (comment_id);
+

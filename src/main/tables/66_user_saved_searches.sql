@@ -9,3 +9,5 @@ CREATE TABLE user_saved_searches (
     saved_searches TEXT NOT NULL
 );
 
+CREATE INDEX ON user_saved_searches (user_id);
+

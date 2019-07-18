@@ -17,3 +17,5 @@ CREATE TABLE data_containers (
   -- Whether the container is mounted read-only
   read_only BOOLEAN NOT NULL DEFAULT TRUE
 );
+
+CREATE INDEX ON data_containers (container_images_id);

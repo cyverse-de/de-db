@@ -9,3 +9,5 @@ CREATE TABLE integration_data (
     integrator_email character varying(255) NOT NULL CHECK (integrator_email ~ '\S'),
     user_id uuid
 );
+
+CREATE INDEX ON integration_data (user_id);

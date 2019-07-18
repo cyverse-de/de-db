@@ -11,3 +11,6 @@ CREATE TABLE validation_rule_argument_definitions (
     description text NOT NULL,
     argument_type_id uuid NOT NULL
 );
+
+CREATE INDEX ON validation_rule_argument_definitions (rule_type_id);
+CREATE INDEX ON validation_rule_argument_definitions (argument_type_id);

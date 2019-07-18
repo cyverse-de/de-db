@@ -9,3 +9,8 @@ CREATE TABLE webhooks_subscription (
 
   PRIMARY KEY (webhook_id, topic_id)
 );
+
+CREATE INDEX ON webhooks_subscription (topic_id);
+CREATE INDEX ON webhooks_subscription (webhook_id);
+
+

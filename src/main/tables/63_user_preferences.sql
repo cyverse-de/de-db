@@ -9,3 +9,4 @@ CREATE TABLE user_preferences (
   preferences TEXT NOT NULL
 );
 
+CREATE INDEX ON user_preferences (user_id);

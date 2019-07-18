@@ -9,3 +9,5 @@ CREATE TABLE app_references (
     reference_text text NOT NULL
 );
 
+CREATE INDEX ON app_references (app_id);
+

@@ -50,3 +50,6 @@ CREATE TABLE app_publication_request_statuses (
 --
 CREATE INDEX app_publication_request_statuses_app_publication_request_id_index
     ON app_publication_request_statuses(app_publication_request_id);
+
+
+CREATE INDEX ON app_publication_request_statuses (app_publication_request_status_code_id);
